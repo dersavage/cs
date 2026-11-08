@@ -1,0 +1,41 @@
+baseURL = "https://dersavage.github.io/cs/"
+title = "Computer Science"
+theme = "hugo-trainsh"
+defaultContentLanguage = "en"
+languageCode = "en-US"
+enableRobotsTXT = true
+
+[markup.goldmark.renderer]
+  # post bodies may contain hand-written HTML
+  unsafe = true
+
+[outputs]
+  home = ["HTML", "RSS"]
+
+[params]
+  mainSections = ["posts"]
+
+[[menus.main]]
+  name = "Home"
+  pageRef = "/"
+  weight = 10
+
+[[menus.main]]
+  name = "Blog"
+  pageRef = "/blog"
+  weight = 20
+
+[[menus.main]]
+  name = "Tags"
+  pageRef = "/tags"
+  weight = 30
+
+[[menus.main]]
+  name = "Tutorials"
+  url = "https://dersavage.github.io/tutorials/"
+  weight = 40
+
+[[menus.main]]
+  name = "Main site"
+  url = "https://dersavage.github.io/site/"
+  weight = 50
