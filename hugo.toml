@@ -31,11 +31,6 @@ enableRobotsTXT = true
   weight = 30
 
 [[menus.main]]
-  name = "Tutorials"
-  url = "https://dersavage.github.io/tutorials/"
-  weight = 40
-
-[[menus.main]]
   name = "Main site"
   url = "https://dersavage.github.io/site/"
   weight = 50
