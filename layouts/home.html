@@ -1,0 +1,29 @@
+{{- /* Site override of themes/contour/layouts/home.html.
+       Identical to the theme's landing page except that the body of content/_index.md
+       is shown under the menu (the theme's landing page renders no body text). */ -}}
+{{ define "main" }}
+{{- $introCSS := resources.Get "css/home-intro.css" -}}
+{{- if hugo.IsProduction }}{{ $introCSS = $introCSS | minify | fingerprint }}{{ end -}}
+<link rel="stylesheet" href="{{ $introCSS.RelPermalink }}"{{ with $introCSS.Data.Integrity }} integrity="{{ . }}" crossorigin="anonymous"{{ end }}>
+
+{{ partial "contour-canvas.html" (dict "id" "terrain" "class" "page-terrain" "frame" "home") }}
+
+<aside class="site-panel home-panel">
+  {{ partial "copyright.html" . }}
+</aside>
+
+{{ partial "field-frame.html" (dict "class" "home-field" "frame" "home") }}
+
+{{ partial "site-controls.html" . }}
+
+<div class="home-menu-frame">
+  <main class="menu">
+    {{ partial "menu.html" . }}
+    {{- with .Content }}
+    <div class="home-intro">{{ . }}</div>
+    {{- end }}
+  </main>
+</div>
+
+{{ partial "logo.html" (dict "heading" true) }}
+{{ end }}

@@ -1,9 +1,13 @@
 baseURL = "https://dersavage.github.io/cs/"
 title = "Computer Science"
-theme = "hugo-trainsh"
+theme = "contour"
 defaultContentLanguage = "en"
-languageCode = "en-US"
+locale = "en-US"
 enableRobotsTXT = true
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
 
 [markup.goldmark.renderer]
   # post bodies may contain hand-written HTML
@@ -14,23 +18,22 @@ enableRobotsTXT = true
 
 [params]
   mainSections = ["posts"]
-
-[[menus.main]]
-  name = "Home"
-  pageRef = "/"
-  weight = 10
+  logoName = "Computer"
+  logoTLD = " Science"
+  author = "Jan M. Savage"
+  description = "Here you will find all sorts of things for all levels. For now the focus is on beginner and intermediate."
 
 [[menus.main]]
   name = "Blog"
-  pageRef = "/blog"
-  weight = 20
+  pageRef = "/posts"
+  weight = 10
 
 [[menus.main]]
   name = "Tags"
   pageRef = "/tags"
-  weight = 30
+  weight = 20
 
 [[menus.main]]
   name = "Main site"
   url = "https://dersavage.github.io/site/"
-  weight = 50
+  weight = 30
