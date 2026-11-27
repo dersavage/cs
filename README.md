@@ -1,4 +1,4 @@
-# Computer Science
+# All things CS
 
 Hugo blog using the [Contour](https://themes.gohugo.io/themes/hugo-contour/) theme.
 Live at https://dersavage.github.io/cs/.
@@ -9,5 +9,9 @@ Live at https://dersavage.github.io/cs/.
 - The theme is vendored unmodified in `themes/contour` (without its example site and screenshots).
   Site-level overrides live outside it:
   - `layouts/home.html` + `assets/css/home-intro.css`: show the body of `content/_index.md` on the landing page
-  - `layouts/_partials/logo.html`: smaller logo font so the 16-character title fits, and no empty kicker chip
+  - `layouts/_partials/logo.html`: no empty kicker chip
+  - `layouts/_partials/copyright.html`: copyright shows the author (`params.author`)
+  - `layouts/_partials/head.html`: defaults to dark theme instead of following the OS setting
+  - `assets/js/contour.js`: the landing-page terrain (canvas `#terrain`) slowly animates
+- Colours: Pip-Boy green `#1aff80` on near-black (`params.fg` / `params.bg` in `hugo.toml`)
 - `/blog/` redirects to `/posts/` (alias in `content/posts/_index.md`)

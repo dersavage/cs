@@ -1,13 +1,11 @@
 {{- /* Site override of themes/contour/layouts/_partials/logo.html.
-       Same as the theme's, plus an inline font-size: "Computer Science" is 16 characters,
-       and the theme's default size would run off the top and bottom of the vertical logo. */ -}}
+       Same as the theme's, except the kicker chip is only drawn when params.kicker is set. */ -}}
 <div class="logo-group">
   {{- $logoName := site.Params.logoName | default site.Title }}
-  {{- $size := "font-size:min(11.5vw,9.2vh)" }}
   {{- if .heading }}
-  <h1 class="site-title" style="{{ $size | safeCSS }}"><a href="{{ site.Home.RelPermalink }}">{{ $logoName }}<span class="tld">{{ site.Params.logoTLD }}</span></a></h1>
+  <h1 class="site-title"><a href="{{ site.Home.RelPermalink }}">{{ $logoName }}<span class="tld">{{ site.Params.logoTLD }}</span></a></h1>
   {{- else }}
-  <a class="site-title" style="{{ $size | safeCSS }}" href="{{ site.Home.RelPermalink }}">{{ $logoName }}<span class="tld">{{ site.Params.logoTLD }}</span></a>
+  <a class="site-title" href="{{ site.Home.RelPermalink }}">{{ $logoName }}<span class="tld">{{ site.Params.logoTLD }}</span></a>
   {{- end }}
   {{- with site.Params.kicker }}
   <span class="kicker logo-kicker">{{ . }}</span>

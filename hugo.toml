@@ -1,5 +1,5 @@
 baseURL = "https://dersavage.github.io/cs/"
-title = "Computer Science"
+title = "All things CS"
 theme = "contour"
 defaultContentLanguage = "en"
 locale = "en-US"
@@ -18,8 +18,10 @@ enableRobotsTXT = true
 
 [params]
   mainSections = ["posts"]
-  logoName = "Computer"
-  logoTLD = " Science"
+  logoName = "All things"
+  logoTLD = " CS"
+  fg = "#1aff80"  # Pip-Boy green
+  bg = "#010a04"
   author = "Jan M. Savage"
   description = "Here you will find all sorts of things for all levels. For now the focus is on beginner and intermediate."
 

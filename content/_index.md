@@ -1,5 +1,5 @@
 +++
-title = 'Computer Science'
+title = 'All things CS'
 draft = false
 +++
 
