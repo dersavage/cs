@@ -25,7 +25,7 @@ c. I use AI only where it's suitable. So, not all the time, not everywhere. Wher
 
 d. How much AI? This is a tough call. The process is so intertwined that it's hard to get a meaningful and certain range of percentage values.
 
-e. I am strictly against SLOP. I use frontier models and user them in ways that amplifies their power. However, my use of AI is only restricted to certain hobby software projects. All natural language writing is done by me, your host.
+e. I am strictly against SLOP. I use frontier models and user them in ways that amplifies their power. However, my use of AI is only restricted to software projects. All natural language writing is done by me, your host.
 
- Nevertheless, if you find a bug or an issue, please send me an email to dodgybrit \_AT\_ protonmail.me. Thanks and regards!
+ If you do find a bug or an issue anywhere, please send me an email to dodgybrit \_AT\_ protonmail.me. Thanks and regards!
 
